@@ -1,4 +1,4 @@
-### **Servo+Potenciometro**
+### **Potenciometro+Led**
 Los ejemplos del apartado anterior sobre les, pero nos gustaría modificar el brillo del LED a voluntad. Para ello, en nuestros circuitos podríamos utilizar un potenciómetro conectado por un extremo a una fuente de voltaje conocido (los 5 V ofrecidos por la propia placa Arduino ya nos va bien), por otro a tierra y por su patilla central a algún pin de entrada analógico de la placa. La idea es que la placa reciba (proveniente de esa patilla central) una señal analógica controlable a voluntad, y aprovechar esto para “reenviarla” a las salidas analógicas de la placa que queramos. En otras palabras: usaremos un potenciómetro conectado a una entrada analógica como intermediario para manipular un dispositivo conectado a alguna salida PWM (como un LED). Si no decimos lo contrario, en nuestros proyectos utilizaremos un potenciómetro de 10 KΩ.
 
 Ya sabíamos que un potenciómetro es una resistencia variable controlable por su patilla central, pero ¿cuál es esta señal analógica que recibe la placa Arduino proveniente de él? Esta señal es el voltaje existente entre la patilla central y el extremo del potenciómetro conectado a tierra. Por pura y simple Ley de Ohm, al variar la resistencia existente entre la patilla central y sus extremos, varía también la caída de potencial entre estos puntos. Concretamente, cuando entre la patilla central y el extremo del potenciómetro conectado a la alimentación haya una resistencia cercana a cero (y por tanto la resistencia entre la patilla central y el otro extremo, el conectado a tierra, sea máxima), el voltaje leído por la entrada analógica será cercano a 5 V. Cuando la patilla central esté en el otro lado, tocando al extremo conectado a tierra, la lectura será cercana a 0 V. Esta lectura del voltaje (analógico) controlable es el que hemos dicho que podremos “reenviar” a través de los pines PWM de la placa a los dispositivos que deseemos controlar analógicamente.
@@ -8,6 +8,8 @@ Recordemos por otro lado que la placa Arduino dispone de un conversor analógico
 - Arduino-Uno.
 - Potenciometro.
 - Protoboard.
+- Resistencia.
+- Led.
 - Cables.
 ### **Montaje**
 ![Captura de pantalla 2020-07-02 a las 23 23 41](https://user-images.githubusercontent.com/47045714/86410530-33ab6c00-bcbb-11ea-9cb7-ba94468ceb90.png)
