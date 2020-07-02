@@ -13,6 +13,7 @@ La manera concreta de alterar el estado de la patilla central del potenciómetro
 ![Captura de pantalla 2020-07-02 a las 22 46 51](https://user-images.githubusercontent.com/47045714/86409839-f1355f80-bcb9-11ea-95f8-ba5130bca010.png)
 
 ### **Esquema**
+![Captura de pantalla 2020-07-02 a las 23 17 31](https://user-images.githubusercontent.com/47045714/86409988-46717100-bcba-11ea-9908-f94dd5a1da08.png)
 
 
 ### **Movimiento del servo mediante el monitor serial**
