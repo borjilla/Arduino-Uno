@@ -19,6 +19,8 @@ La señal de control de un servomotor de rotación continua está formada por pu
 ![Captura de pantalla 2020-07-02 a las 22 33 01](https://user-images.githubusercontent.com/47045714/86409746-c814cf00-bcb9-11ea-88c7-ae1e2e78f5b1.png)
 
 ### **Esquema**
+![Captura de pantalla 2020-07-02 a las 22 33 15](https://user-images.githubusercontent.com/47045714/86409822-e975bb00-bcb9-11ea-9909-902367d62f9c.png)
+
 
 ### **Movimiento del servo 0 a 180 grados**
 El siguiente código mueve de forma continua el eje del servomotor desde un ángulo de 0 grados hasta 180 y seguidamente lo mueve en sentido contrario de 180 grados a 0, y así ininterrumpidamente.
