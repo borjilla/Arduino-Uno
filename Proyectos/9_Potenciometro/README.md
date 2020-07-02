@@ -19,6 +19,18 @@ Recordemos por otro lado que la placa Arduino dispone de un conversor analógico
 ### **Movimiento del servo mediante el monitor serial**
 Empezaremos por un circuito muy sencillo para ver en la práctica todo lo que se acaba de explicar. Consta tan solo de un potenciómetro y nada más, conectado tal como se ha dicho. El pin de entrada analógico escogido ha sido el número 2.
 
+-De todas formas, tendría más gracia observar el valor analógico correspondiente a esa lectura. Es decir, ya sabemos que si vemos un 1023 este valor se corresponde con 5 V (esto es solo porque suponemos que estamos alimentando el potenciómetro con 5 V –los ofrecidos por la propia placa–), pero ¿y si vemos un 584? ¿Cuántos voltios se reciben en ese caso por la entrada analógica? Para saberlo, simplemente debemos aplicar una regla de proporcionalidad: multiplicar el valor leído por 5/1023.
+![Captura de pantalla 2020-07-02 a las 23 26 07](https://user-images.githubusercontent.com/47045714/86410640-6f463600-bcbb-11ea-94a4-3019415e63fc.png)
+Con un poco de imaginación, podríamos modificar el ejemplo anterior para que en vez de mostrar el voltaje leído por el canal serie, lo visualizáramos en una tira de LEDs (10 por ejemplo), a modo de “termómetro” luminoso. Se deja como ejercicio.
+
+-¿Y si le ponemos al circuito anterior un LED?
+Todo esto lo probaremos en el siguiente circuito, donde añadiremos un LED (conectado a un pin de la placa que ha de ser de tipo PWM, como por ejemplo el no 9) al potenciómetro que ya teníamos montado.
+![Captura de pantalla 2020-07-02 a las 23 28 32](https://user-images.githubusercontent.com/47045714/86410834-d4019080-bcbb-11ea-8de0-63e5d1c616b7.png)
+Y aquí está el código:
+![Captura de pantalla 2020-07-02 a las 23 30 38](https://user-images.githubusercontent.com/47045714/86410968-1b881c80-bcbc-11ea-9f74-3d90aed0bbfb.png)
+
+
+
 
 
 
