@@ -13,4 +13,7 @@ void loop(){
       }
       //De 180 a 0
       for(i = 180; i>=1; i--) {
-} }
+        miservo.write(i);
+        delay(15);
+      }
+}
