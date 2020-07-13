@@ -19,6 +19,7 @@ Así pues, para hacer sonar un zumbador típico (como por ejemplo, el producto n
 ![5 0_1024x1024](https://user-images.githubusercontent.com/47045714/87345928-1eeb9580-c551-11ea-936c-814369247372.png)
 
 ### **Ejercicio**
+Lo que estamos haciendo es enviar consecutivamente pulsos digitales HIGH y LOW a una velocidad tan elevada que hace vibrar el zumbador a una frecuencia audible por el ser humano. Concretamente, el pulso HIGH lo hacemos durar 1 ms y el pulso LOW otro 1 ms, por lo que el período de esta onda cuadrada es de 2 ms (0,002s). Por tanto, como f = 1/T, la frecuencia de la señal audible generada será de 1/0,002 = 500 Hz.
 
 
 
