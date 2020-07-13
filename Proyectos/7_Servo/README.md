@@ -31,7 +31,8 @@ La señal de control de un servomotor de rotación continua está formada por pu
 ### **Movimiento del servo 0 a 180 grados**
 El siguiente código mueve de forma continua el eje del servomotor desde un ángulo de 0 grados hasta 180 y seguidamente lo mueve en sentido contrario de 180 grados a 0, y así ininterrumpidamente.
 
-
+### **Movimiento del servo 0 a 180 grados Botones**
+Evidentemente, con pulsadores no solo podemos controlar LEDs, sino cualquier otro tipo de actuador. Por ejemplo, en un circuito con dos pulsadores conectados a los pines de entrada digital no 7 y no 8 respectivamente (además de a la alimentación y a tierra a través de una resistencia “pull-down”) y un servomotor conectado al pin de salida PWM no 3 (además de a la alimentación y a tierra), podríamos ejecutar el siguiente código. Gracias a él, pulsando un botón el servomotor se movería en un sentido de giro, y pulsando el otro botón se movería en sentido contrario.
 
 
 
