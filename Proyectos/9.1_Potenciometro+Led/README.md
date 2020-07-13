@@ -20,5 +20,8 @@ Por suerte, tanto el rango de voltaje analógico leído de entrada es de 5 V (po
 ### **Ejemplo**
 Todo esto lo probaremos en el siguiente circuito, donde añadiremos un LED (conectado a un pin de la placa que ha de ser de tipo PWM, como por ejemplo el no 9) al potenciómetro que ya teníamos montado.
 
+### **Y con un digital**
+En vez de utilizar la lectura del potenciómetro para variar de forma continua el brillo de un LED, otra cosa que podemos hacer con el mismo circuito del ejemplo anterior es enviar al LED una señal digital con digitalWrite() –es decir, sin valores intermedios: o se enciende (HIGH) o se apaga (LOW)– para hacerlo parpadear y utilizar entonces la lectura del potenciómetro como parámetro de delay() para establecer el tiempo de parpadeo. De esta forma, al variar de forma continua el estado del potenciómetro, variaremos de forma continua el tiempo de parpadeo:
+
 
 
