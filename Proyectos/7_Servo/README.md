@@ -33,7 +33,7 @@ El siguiente código mueve de forma continua el eje del servomotor desde un áng
 
 ### **Movimiento del servo 0 a 180 grados Botones**
 Evidentemente, con pulsadores no solo podemos controlar LEDs, sino cualquier otro tipo de actuador. Por ejemplo, en un circuito con dos pulsadores conectados a los pines de entrada digital no 7 y no 8 respectivamente (además de a la alimentación y a tierra a través de una resistencia “pull-down”) y un servomotor conectado al pin de salida PWM no 3 (además de a la alimentación y a tierra), podríamos ejecutar el siguiente código. Gracias a él, pulsando un botón el servomotor se movería en un sentido de giro, y pulsando el otro botón se movería en sentido contrario.
-
+![Captura de pantalla 2020-07-13 a las 20 45 11](https://user-images.githubusercontent.com/47045714/87341676-51de5b00-c54a-11ea-81b1-4dee552ada4d.png)
 
 
 
