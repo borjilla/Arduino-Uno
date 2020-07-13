@@ -18,9 +18,14 @@ Así pues, para hacer sonar un zumbador típico (como por ejemplo, el producto n
 
 ![5 0_1024x1024](https://user-images.githubusercontent.com/47045714/87345928-1eeb9580-c551-11ea-936c-814369247372.png)
 
-### **Ejercicio**
+### **Ejercicio 1**
 Lo que estamos haciendo es enviar consecutivamente pulsos digitales HIGH y LOW a una velocidad tan elevada que hace vibrar el zumbador a una frecuencia audible por el ser humano. Concretamente, el pulso HIGH lo hacemos durar 1 ms y el pulso LOW otro 1 ms, por lo que el período de esta onda cuadrada es de 2 ms (0,002s). Por tanto, como f = 1/T, la frecuencia de la señal audible generada será de 1/0,002 = 500 Hz.
 
+### **Ejercicio 2**
+Podemos hacer que la frecuencia del sonido vaya cambiando. Por ejemplo, el siguiente sketch reproduce (una sola vez) un sonido que pasa de ser grave a ser agudo de forma continua. Esto es porque al principio su periodo es de 10000 ms (es decir, 1/0,01 = 100 Hz) y al final su periodo es de 100 ms (es decir, 1/0,0001 = 10 KHz). Fijarse que podemos variar la duración del sonido si modificamos el incremento (es decir, el tercer parámetro del for, que en este caso es un decremento). Para probar este código, se ha de usar el mismo circuito que el ejemplo anterior.
+
+### **Ejercicio 3**
+Añadamos ahora al circuito anterior un potenciómetro. La patilla de un extremo (cualquiera) la conectaremos a la misma tierra que el zumbador, la patilla del otro extremo a la alimentación (que puede ser proporcionada por la propia placa Arduino a través del pin “5V”) y la patilla central a un pin de entrada analógica de Arduino (por ejemplo, el no 0). Gracias al sketch siguiente, seremos capaces de cambiar el tono del sonido generado por el zumbador simplemente girando la rueda del potenciómetro.
 
 
 
