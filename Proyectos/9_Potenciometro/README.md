@@ -37,6 +37,8 @@ Y aquí está el código:
 ![Captura de pantalla 2020-07-02 a las 23 30 38](https://user-images.githubusercontent.com/47045714/86410968-1b881c80-bcbc-11ea-9f74-3d90aed0bbfb.png)
 
 
+### **Potenciometro con Array**
+Para probar esta manera de obtener datos podemos utilizar el mismo circuito del ejemplo anterior. Concretamente, el código siguiente guarda diez lecturas analógicas en un array de diez posiciones, una a una. Por cada nuevo valor guardado, suma todos los valores y divide el resultado por el número de elementos del array (es decir, calcula la media de esos valores en ese preciso momento). Esta media, mostrada en el “Serial monitor”, ofrece una lectura más suavizada del conjunto de valores leídos. Como la media se calcula cada vez que se lee un nuevo valor (en vez de esperar a llenar el array de diez valores nuevos, que sería otra manera), no se aprecia ningún tiempo de espera en los cálculos. Lógicamente, cuanto mayor sea elnúmero de elementos del array, mayor suavizado habrá en el resultado final, pero también será más lenta la obtención de este.
 
 
 
