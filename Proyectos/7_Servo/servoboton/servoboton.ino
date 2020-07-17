@@ -28,11 +28,13 @@ void loop() {
                  //Mueve el servo de 180 a 0 grados
                     miservo.write(pos);
              }
+       }
        if(digitalRead(8) == HIGH)  {
              if( pos < 180)  {
-                    pos=pos++;
- //Mueve el servo de 0 a 180 grados miservo.write(pos);
+                    pos++;
+                //Mueve el servo de 0 a 180 grados 
+                    miservo.write(pos);
              }
        }
-       }
+       
 }
